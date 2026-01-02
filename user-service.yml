@@ -6,6 +6,11 @@ spring:
     mongodb:
       uri: ${MONGO_URI}
       database: userdb
+    rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
 #      uri: mongodb+srv://levminh04:YpKyANcOQHCwQ5zz@userdb.eu0odxa.mongodb.net/?retryWrites=true&w=majority&appName=userdb
 #      database: userdb
 
@@ -40,3 +45,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
