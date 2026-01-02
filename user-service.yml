@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/userdb
+      uri: ${MONGO_URI}
       database: userdb
 #      uri: mongodb+srv://levminh04:YpKyANcOQHCwQ5zz@userdb.eu0odxa.mongodb.net/?retryWrites=true&w=majority&appName=userdb
 #      database: userdb
